@@ -23,6 +23,7 @@
     "nestjs",
     "peaceiris",
     "Posgre",
+    "prebuild",
     "printf",
     "rankdir",
     "repos",
