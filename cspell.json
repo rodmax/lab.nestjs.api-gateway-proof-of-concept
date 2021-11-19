@@ -1,0 +1,35 @@
+{
+  "version": "0.2",
+  "ignorePaths": [
+    "node_modules/**",
+    "dits/**",
+    "reports/**",
+    "package-lock.json",
+    "*.svg",
+    ".vscode/extensions.json"
+  ],
+  "language": "en",
+  "words": [
+    "automerge",
+    "browserslist",
+    "cimode",
+    "codecov",
+    "codeframe",
+    "depcruise",
+    "graphviz",
+    "minmax",
+    "mockapi",
+    "mqpacker",
+    "nestjs",
+    "peaceiris",
+    "Posgre",
+    "printf",
+    "rankdir",
+    "repos",
+    "Rodionov",
+    "rodmax",
+    "shellcheck",
+    "stylelint",
+    "testcafe"
+  ]
+}
