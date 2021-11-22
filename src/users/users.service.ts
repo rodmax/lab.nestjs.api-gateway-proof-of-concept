@@ -1,11 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { APP_DB_USER_TABLE } from 'src/ config/config.interface';
 import { DbService } from 'src/db/db.service';
-
-export interface UserDto {
-    id: number;
-    email: string;
-}
+import { UserDto } from './users.dto';
 
 @Injectable()
 export class UsersService {

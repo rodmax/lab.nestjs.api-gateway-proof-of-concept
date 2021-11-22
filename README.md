@@ -47,4 +47,9 @@ nest g service db
 # Setup ConfigService
 npm i --save @nestjs/config
 # and then create .env file with envs, and use them in docker-compose.yml and ConfigService in nestjs app
+
+
+# Setup swagger.
+# Read the official docs: https://docs.nestjs.com/openapi/introduction
+npm install --save @nestjs/swagger swagger-ui-express
 ```

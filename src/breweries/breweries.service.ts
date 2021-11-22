@@ -1,10 +1,7 @@
 import { HttpService } from '@nestjs/axios';
 import { Injectable } from '@nestjs/common';
 import { map, Observable } from 'rxjs';
-
-export interface BreweriesListDto {
-    willBeTypedLater: string;
-}
+import { BreweriesListDto } from './breweries.dto';
 
 @Injectable()
 export class BreweriesService {

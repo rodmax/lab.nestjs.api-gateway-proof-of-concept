@@ -5,7 +5,7 @@ import { BreweriesService } from './breweries.service';
 export class BreweriesController {
     constructor(private breweriesService: BreweriesService) {}
 
-    @Get('list')
+    @Get()
     list() {
         return this.breweriesService.list();
     }
