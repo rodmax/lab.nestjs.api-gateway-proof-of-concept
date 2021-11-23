@@ -22,8 +22,9 @@ TODO checklist:
 Our application consists of:
 
 -   postgreSQL db: standard docker container via docker-compose
--   NestJs application
 -   proxied service: https://www.openbrewerydb.org/ free public API
+-   NestJs application<br>
+    <img src="docs/dependencies.svg">
 
 ## Usage
 
