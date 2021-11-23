@@ -9,7 +9,7 @@ TODO checklist:
 -   [x] init application
 -   [x] Integrate with DB(postgres): `GET /users` response: JSON array with users from **PostgreSQL**
 -   [x] Proxy response from another service: `GET /breweries`
--   [x] SWAGGER page
+-   [x] SWAGGER. Accessible on page http://localhost:3000/swagger/
 -   [x] e2e<br>
         <img src="./docs/e2e.png">
 -   [ ] `GET /users/as-excel` response: excel file
