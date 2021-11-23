@@ -1,16 +1,70 @@
 # nestjs-api-gateway-proof-of-concept
 
+## Goals
+
+-   Study NestJs. Check developer experience and get acquainted with ecosystem
+
 TODO checklist:
 
--   [*] init application
--   [ ] `POST /login` authenticate with session token in cookies
--   [ ] `POST /logout` clear cookies
--   [*] `GET /users` response: JSON array with users from **PostgreSQL**
+-   [x] init application
+-   [x] Integrate with DB(postgres): `GET /users` response: JSON array with users from **PostgreSQL**
+-   [x] Proxy response from another service: `GET /breweries`
+-   [x] SWAGGER page
 -   [ ] `GET /users/as-excel` response: excel file
--   [*] `GET /data-from-service` load data from other service
--   [ ] swagger page
+-   [ ] authentication:
+    -   `POST /login` with session token in cookies
+    -   `POST /logout` clear cookies
 
-## Notes
+## Design
+
+Our application consists of:
+
+-   postgreSQL started as standard docker container via docker-compose
+-   NestJs application
+-   proxied service: https://www.openbrewerydb.org/ free public API
+
+## Usage
+
+### Requirements
+
+-   `nodejs` 14+
+-   `docker` `docker-compose`
+-   Clone repo and run `npm ci`
+
+### Commands
+
+-   start docker with postgreSQL(with pre-filled data)
+
+```bash
+npm run db:start # run as daemon
+```
+
+-   start app in dev(watch) mode
+
+```bash
+npm run start -- --watch
+```
+
+-   stop database daemon
+
+```bash
+npm run db:stop
+```
+
+-   clear database data (DB should be stopped before :warning:)
+
+```bash
+npm run db:remove
+```
+
+-   run e2e tests
+
+```bash
+# Step 0. start DB if not started yet
+npm run test:e2e
+```
+
+## Progress details
 
 ```bash
 # Prepare global environment
@@ -50,6 +104,6 @@ npm i --save @nestjs/config
 
 
 # Setup swagger.
-# Read the official docs: https://docs.nestjs.com/openapi/introduction
 npm install --save @nestjs/swagger swagger-ui-express
+# then follow the official docs: https://docs.nestjs.com/openapi/introduction
 ```
