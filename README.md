@@ -10,6 +10,8 @@ TODO checklist:
 -   [x] Integrate with DB(postgres): `GET /users` response: JSON array with users from **PostgreSQL**
 -   [x] Proxy response from another service: `GET /breweries`
 -   [x] SWAGGER page
+-   [x] e2e<br>
+        <img src="./docs/e2e.png">
 -   [ ] `GET /users/as-excel` response: excel file
 -   [ ] authentication:
     -   `POST /login` with session token in cookies
@@ -19,7 +21,7 @@ TODO checklist:
 
 Our application consists of:
 
--   postgreSQL started as standard docker container via docker-compose
+-   postgreSQL db: standard docker container via docker-compose
 -   NestJs application
 -   proxied service: https://www.openbrewerydb.org/ free public API
 
@@ -27,8 +29,8 @@ Our application consists of:
 
 ### Requirements
 
--   `nodejs` 14+
--   `docker` `docker-compose`
+-   Install `nodejs` 14+
+-   Install `docker` `docker-compose`
 -   Clone repo and run `npm ci`
 
 ### Commands

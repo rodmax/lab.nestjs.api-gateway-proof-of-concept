@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { APP_DB_USER_TABLE } from 'src/ config/config.interface';
+import { APP_DB_USER_TABLE } from 'src/config/config.interface';
 import { DbService } from 'src/db/db.service';
 import { UserDto } from './users.dto';
 
